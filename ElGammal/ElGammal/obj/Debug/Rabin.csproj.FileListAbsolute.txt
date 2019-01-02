@@ -1,0 +1,66 @@
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\One-Time-Pad.exe.config
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\One-Time-Pad.exe
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\One-Time-Pad.pdb
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\MaterialDesignColors.dll
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\Rabin.csprojResolveAssemblyReference.cache
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\View\MainWindow.g.cs
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\App.g.cs
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\One-Time-Pad_MarkupCompile.cache
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\One-Time-Pad_MarkupCompile.lref
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\App.baml
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\View\MainWindow.baml
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\One-Time-Pad.g.resources
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\One_Time_Pad.Properties.Resources.resources
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\Rabin.csproj.GenerateResource.cache
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\Rabin.csproj.CoreCompileInputs.cache
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\Rabin.csproj.CopyComplete
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\One-Time-Pad.exe
+C:\Users\Kubek\source\repos\One-Time-Pad\One-Time-Pad\obj\Debug\One-Time-Pad.pdb
+A:\algorytm\One-Time-Pad\bin\Debug\One-Time-Pad.exe.config
+A:\algorytm\One-Time-Pad\bin\Debug\One-Time-Pad.exe
+A:\algorytm\One-Time-Pad\bin\Debug\One-Time-Pad.pdb
+A:\algorytm\One-Time-Pad\bin\Debug\MaterialDesignColors.dll
+A:\algorytm\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.dll
+A:\algorytm\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.pdb
+A:\algorytm\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.xml
+A:\algorytm\One-Time-Pad\obj\Debug\Rabin.csprojAssemblyReference.cache
+A:\algorytm\One-Time-Pad\obj\Debug\View\MainWindow.g.cs
+A:\algorytm\One-Time-Pad\obj\Debug\App.g.cs
+A:\algorytm\One-Time-Pad\obj\Debug\GeneratedInternalTypeHelper.g.cs
+A:\algorytm\One-Time-Pad\obj\Debug\One-Time-Pad_MarkupCompile.cache
+A:\algorytm\One-Time-Pad\obj\Debug\One-Time-Pad_MarkupCompile.lref
+A:\algorytm\One-Time-Pad\obj\Debug\App.baml
+A:\algorytm\One-Time-Pad\obj\Debug\View\MainWindow.baml
+A:\algorytm\One-Time-Pad\obj\Debug\One-Time-Pad.g.resources
+A:\algorytm\One-Time-Pad\obj\Debug\One_Time_Pad.Properties.Resources.resources
+A:\algorytm\One-Time-Pad\obj\Debug\Rabin.csproj.GenerateResource.cache
+A:\algorytm\One-Time-Pad\obj\Debug\Rabin.csproj.CoreCompileInputs.cache
+A:\algorytm\One-Time-Pad\obj\Debug\Rabin.csproj.CopyComplete
+A:\algorytm\One-Time-Pad\obj\Debug\One-Time-Pad.exe
+A:\algorytm\One-Time-Pad\obj\Debug\One-Time-Pad.pdb
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\One-Time-Pad.exe.config
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\One-Time-Pad.exe
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\One-Time-Pad.pdb
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\MaterialDesignColors.dll
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.dll
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.pdb
+A:\algorytm — kopia\One-Time-Pad\bin\Debug\MaterialDesignThemes.Wpf.xml
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\Rabin.csprojAssemblyReference.cache
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\View\MainWindow.g.cs
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\App.g.cs
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\GeneratedInternalTypeHelper.g.cs
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\One-Time-Pad_MarkupCompile.cache
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\One-Time-Pad_MarkupCompile.lref
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\App.baml
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\View\MainWindow.baml
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\One-Time-Pad.g.resources
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\One_Time_Pad.Properties.Resources.resources
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\Rabin.csproj.GenerateResource.cache
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\Rabin.csproj.CoreCompileInputs.cache
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\Rabin.csproj.CopyComplete
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\One-Time-Pad.exe
+A:\algorytm — kopia\One-Time-Pad\obj\Debug\One-Time-Pad.pdb

@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="View.CompareHash"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:View"
+             xmlns:conv="clr-namespace:Converters"
+             mc:Ignorable="d" 
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+	<UserControl.Resources>
+		<conv:KeyPConverter x:Key="keyPConverter" />
+		<conv:BigIntToStringConverter x:Key="bigIntToStringConverter" />
+		<conv:ByteToStringConverter x:Key="byteToStringConverter" />
+	</UserControl.Resources>
+	<StackPanel>
+		<TextBox HorizontalAlignment="Left"
+				 MaxHeight="50"
+                 Width="800"
+				 materialDesign:HintAssist.Hint="Odszyfrowany skrót"					 
+				 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+				 Text="{Binding ElGamalManager.HashComparer.DecryptedHash, Converter={StaticResource byteToStringConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  	  
+				 TextWrapping="Wrap"
+				 VerticalScrollBarVisibility="Auto" />
+		<StackPanel Orientation="Horizontal">
+		<TextBox MaxHeight="50"
+                 Width="800"
+				 materialDesign:HintAssist.Hint="Wczytany skrót"					 
+				 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+				 Text="{Binding ElGamalManager.HashComparer.OriginalHash,Converter={StaticResource byteToStringConverter},  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  	  
+				 TextWrapping="Wrap"
+				 VerticalScrollBarVisibility="Auto" />
+			<Button Background="White"
+					Command="{Binding LoadCommand}"  
+					CommandParameter="Comparer">
+					<Image Source="pack://application:,,,/Resources/load.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Button HorizontalAlignment="Left"
+					Height="30" 
+					Width="100"	
+					Command="{Binding CompareHashCommand}" 						 
+					Content="Porównaj"/>
+			<TextBox MaxHeight="50"
+					 Width="800"
+					 materialDesign:HintAssist.Hint="Wynik porównania"					 
+					 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+					 Text="{Binding ElGamalManager.HashComparer.StringResult, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  	  
+					 TextWrapping="Wrap"
+					 VerticalScrollBarVisibility="Auto"
+					 IsReadOnly="True"/>
+		</StackPanel>
+	</StackPanel>
+</UserControl>

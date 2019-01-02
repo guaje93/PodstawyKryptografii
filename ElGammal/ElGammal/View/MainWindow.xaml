@@ -1,0 +1,46 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+		xmlns:conv="clr-namespace:Converters"
+		xmlns:local="clr-namespace:View"
+		xmlns:vm="clr-namespace:ViewModel"
+		Title="Szyfr El Gamala"
+        mc:Ignorable="d"
+        Height="800" 
+		Width="1000"
+		ResizeMode="NoResize">
+
+	<Window.DataContext>
+		<vm:MainWindowViewModel/>
+	</Window.DataContext>
+	<Window.Resources>
+		<conv:BigIntToStringConverter x:Key="bigIntToStringConverter" />
+		<conv:BigIntToString2Converter x:Key="bigIntToString2Converter" />
+	</Window.Resources>
+
+	<Border Padding="0">
+		<StackPanel VerticalAlignment="Top">
+			<StackPanel Margin="5">
+				<local:PublicKeyPView/>
+				<local:PublicKeyGView/>
+				<local:PrivateKeyAView/>
+				<local:PublicKeyHView/>
+				<local:KeyRView/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" Margin="5">
+				<StackPanel Margin="5">
+					<local:StringCrypt/>
+				</StackPanel>
+				<StackPanel Margin="5">
+					<local:FileCrypt/>
+				</StackPanel>
+			</StackPanel>
+			<local:CompareHash Margin="5"/>
+		</StackPanel>
+
+	</Border>
+</Window>

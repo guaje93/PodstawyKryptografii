@@ -1,0 +1,141 @@
+﻿<UserControl x:Class="View.FileCrypt"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:conv="clr-namespace:Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	
+	<UserControl.Resources>
+		<conv:KeyPConverter x:Key="keyPConverter" />
+		<conv:ByteToStringConverter x:Key="byteToStringConverter" />
+	</UserControl.Resources>
+	
+	<StackPanel>
+		<TextBlock Text="Wczytaj plik" Width="350" FontSize="20" />
+
+		<StackPanel Orientation="Horizontal">
+		<TextBox Width="380"
+  		 		 MaxHeight="50"
+				 TextWrapping="Wrap"
+				 VerticalScrollBarVisibility="Auto"
+				 materialDesign:HintAssist.Hint="Wiadomość w pliku"					 
+				 Style="{StaticResource MaterialDesignFloatingHintTextBox}"		 
+				 Text="{Binding ElGamalManager.OriginalMessageFactory.OperationStatus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		
+			
+			<Button Background="White"
+					Command="{Binding LoadCommand}"  
+					CommandParameter="FileMessage">
+				<Image Source="pack://application:,,,/Resources/load.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+
+			<Button Background="White"
+					Command="{Binding HashCommand}"  
+                    CommandParameter="HashFile"
+					Content="SHA-256"
+					Width="57"
+					FontSize="12"
+					Padding="0"
+					Foreground="Black"/>
+
+
+		</StackPanel>
+		
+		<StackPanel Orientation="Horizontal">
+			<TextBox Width="380"
+  		 			 MaxHeight="50"
+					 TextWrapping="Wrap"
+					 VerticalScrollBarVisibility="Auto"
+					 materialDesign:HintAssist.Hint="Skrót wiadomości"					 
+					 Style="{StaticResource MaterialDesignFloatingHintTextBox}"		 
+					 Text="{Binding ElGamalManager.MessageFactory.FileMessage.Hash, Converter={StaticResource byteToStringConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+			<Button Background="White"
+					Command="{Binding LoadCommand}"  
+					CommandParameter="Hash">
+				<Image Source="pack://application:,,,/Resources/load.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+
+			<Button Background="White"
+                    Command="{Binding SaveCommand}" 
+					CommandParameter="HashFile">
+				<Image Source="pack://application:,,,/Resources/save.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Button Width="120"
+                    Height="30"
+					Command="{Binding EncryptCommand}"
+					CommandParameter="file"
+					Content="Szyfruj"/>
+			<Button Width="170"
+                    Height="30"
+					Command="{Binding DecryptCommand}" 						 
+					CommandParameter="file"
+					Content="Deszyfruj wiadomosc"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal">
+			<TextBox Width="380"
+  		 			 MaxHeight="50"
+					 TextWrapping="Wrap"
+					 VerticalScrollBarVisibility="Auto"
+					 materialDesign:HintAssist.Hint="C1"					 
+					 Style="{StaticResource MaterialDesignFloatingHintTextBox}"		 
+					 Text="{Binding ElGamalManager.MessageFactory.CipheredFileMessage.HashC1, Converter={StaticResource byteToStringConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+			<Button Background="White"
+					Command="{Binding LoadCommand}"  
+					CommandParameter="C1">
+				<Image Source="pack://application:,,,/Resources/load.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+
+			<Button Background="White"
+                    Command="{Binding SaveCommand}" 
+					CommandParameter="C1">
+				<Image Source="pack://application:,,,/Resources/save.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal">
+			<TextBox Width="380"
+  		 			 MaxHeight="50"
+					 TextWrapping="Wrap"
+					 VerticalScrollBarVisibility="Auto"
+					 materialDesign:HintAssist.Hint="C2"					 
+					 Style="{StaticResource MaterialDesignFloatingHintTextBox}"		 
+					 Text="{Binding ElGamalManager.MessageFactory.CipheredFileMessage.HashC2, Converter={StaticResource byteToStringConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+			<Button Background="White"
+					Command="{Binding LoadCommand}"  
+					CommandParameter="C2">
+				<Image Source="pack://application:,,,/Resources/load.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+
+			<Button Background="White"
+                    Command="{Binding SaveCommand}" 
+					CommandParameter="C2">
+				<Image Source="pack://application:,,,/Resources/save.png" 
+						   Width="25" 
+						   Height="25"/>
+			</Button>
+		</StackPanel>
+	</StackPanel>
+</UserControl>
